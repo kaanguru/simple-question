@@ -38,11 +38,12 @@ export default new Vuex.Store({
                 });
         },
         getBirds: ({ commit }) => {
+// apollo client can not authenticate here because token was added in main.ts file
             apolloClient
                 .query({
                     query: gql`
                     query birds {
-                      birds(where: { Canli: true }, limit: 16) {
+                      birds() {
                         isim
                         bilezik
                       }
