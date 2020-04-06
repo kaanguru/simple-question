@@ -1,9 +1,9 @@
 {
     "files.exclude": {
         "hooks": true,
-        "node_modules": true,
+        "node_modules": false,
         "platforms": true,
-        "sebapi": true,
+        "sebapi": false,
         "types": true
     },
     "prettier.printWidth": 166,
