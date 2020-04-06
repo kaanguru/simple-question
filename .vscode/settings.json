@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "hooks": true,
+        "node_modules": true,
+        "platforms": true,
+        "sebapi": true,
+        "types": true
+    },
+    "prettier.printWidth": 166,
+    "eslint.packageManager": "yarn",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.packageManager": "yarn"
+}
