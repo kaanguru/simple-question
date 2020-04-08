@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import routes from "../../routes";
+import routes from "../routes";
 import * as ApplicationSettings from "tns-core-modules/application-settings";
 
 export default {

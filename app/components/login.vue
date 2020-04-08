@@ -50,8 +50,8 @@
 </template>
 
 <script lang="ts">
-import axios from "../../axios-auth";
-import routes from "../../routes";
+import axios from "../axios-auth";
+import routes from "../routes";
 import * as ApplicationSettings from "tns-core-modules/application-settings";
 
 export default {

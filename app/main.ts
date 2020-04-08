@@ -16,18 +16,7 @@ export const defaultClient = new ApolloClient({
     uri: "http://sebapi.com/graphql",
     headers: {
         authorization: `Bearer ${tokenInAppSet}`,
-    },
-    onError: ({ graphQLErrors, networkError }) => {
-        if (networkError) {
-            console.log("[networkError]", networkError);
-        }
-
-        if (graphQLErrors) {
-            for (let err of graphQLErrors) {
-                console.dir("GRAPHQL ERROR: ", err);
-            }
-        }
-    },
+    }
 });
 
 Vue.use(VueApollo);
