@@ -4,7 +4,6 @@ import Vuex from "vuex";
 import routes from "./routes";
 import axios from "./axios-auth";
 import * as ApplicationSettings from "tns-core-modules/application-settings";
-import { defaultClient as apolloClient } from "./main";
 import { gql } from "apollo-boost";
 
 Vue.use(Vuex);
@@ -38,8 +37,7 @@ export default new Vuex.Store({
                 });
         },
         getBirds: ({ commit }) => {
-// apollo client can not authenticate here because token was added in main.ts file
-            apolloClient
+            apolloProvider
                 .query({
                     query: gql`
                     query birds {
